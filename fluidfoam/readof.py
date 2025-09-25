@@ -237,7 +237,7 @@ class OpenFoamFile(object):
                 sys.exit(1)
 
             elif b"value" in self.content.split(boun)[iboun].split(b"}")[0]:
-                data = self.content.split(boun)[iboun].split(b"value")[1]
+                data = self.content.split(boun)[iboun].split(b"value ")[1]
             else:
                 if self.verbose:
                     print(R+"Warning : No data on boundary/patch")
